@@ -130,7 +130,89 @@
           </li>
         </ol>
       </li>
+      <li>
+        <a href="ftp://user:pass@tavalik.ru/Temp/file.txt"
+          >Ссылку на файл на сервере FTP с авторизацией</a
+        >
+      </li>
     </ol>
+
+    <form action="/" method="post">
+      <label>
+        ФИО: <br />
+        <input type="text" name="name" placeholder="Введите ваше ФИО" />
+      </label>
+      <br />
+
+      <label>
+        Телефон: <br />
+        <input type="tel" name="field-tel" placeholder="Введите ваш телефон" />
+      </label>
+      <br />
+
+      <label>
+        E-mail: <br />
+        <input
+          type="email"
+          name="field-email"
+          placeholder="Введите ваш e-mail"
+        />
+      </label>
+      <br />
+
+      <label>
+        Дата рождения: <br />
+        <input type="date" name="field-date-of-birth" value="2023-09-05" />
+      </label>
+      <br />
+
+      <label>
+        Пол: <br />
+        <input type="radio" name="radio-group-1" checked="checked" />
+        Мужской
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="radio-group-1" />
+        Женский
+      </label>
+      <br />
+
+      <label>
+        Любимый язык программирования: <br />
+        <select name="field-favorite-language" multiple="multiple">
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+        </select>
+      </label>
+      <br />
+
+      <label>
+        Биография: <br />
+        <textarea name="bio" cols="20" rows="4">
+            Напишите о себе...
+        </textarea>
+      </label>
+
+      <label>
+        <input type="checkbox" name="check-1" />
+        С контрактом ознакомлен(а)
+      </label>
+      <br />
+
+      <label>
+        <input type="submit" value="Сохранить" />
+      </label>
+    </form>
 
     <h1 id="fragment">Ссылка на фрагмент текущей страницы ведёт сюда</h1>
   </body>
