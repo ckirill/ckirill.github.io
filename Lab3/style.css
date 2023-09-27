@@ -16,7 +16,6 @@ header #logo {
   /* Размеры лого -->*/
   position: relative;
   right: 10px;
-  /*float: left;*/
 }
 
 header .menu {
@@ -65,12 +64,6 @@ nav ul {
 nav li {
   margin: 0 20px;
 }
-
-/*nav a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-}*/
 
 .content {
   display: flex;
@@ -209,12 +202,6 @@ footer #copyright {
     list-style-type: none;
     margin: 0 10px;
   }
-
-  /*nav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-  }*/
 
   .navigation-links {
     text-align: center;
