@@ -39,9 +39,23 @@ header #website-name {
 .menu a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   font-family: cursive;
   margin-left: 5px;
+}
+
+#hyperlinks-link {
+  order: 5;
+}
+
+.old-links-list {
+  display: flex;
+  flex-direction: column;
+  order: 6;
+}
+
+#table-link {
+  order: 3;
 }
 
 img {
@@ -50,7 +64,8 @@ img {
 
 nav {
   display: flex;
-  width: 100%;
+  order: 2;
+  width: 90%;
   background-color: lightgray;
   border: none;
   border-radius: 10px;
@@ -85,10 +100,13 @@ a {
 }
 
 table {
+  width: 95%;
   display: flex;
+  justify-content: center;
+  align-content: center;
+  order: 4;
   border-radius: 10px;
   margin: 0 auto;
-  width: 95%;
 }
 
 tr,
@@ -109,6 +127,10 @@ th {
 
 #table-title {
   background-color: rgb(30, 5, 44);
+}
+
+#form-link {
+  order: 7;
 }
 
 form {
@@ -147,7 +169,6 @@ form #submit-button {
 
 form .checkboxes {
   width: auto;
-  margin: 10px;
 }
 
 form select {
@@ -155,12 +176,17 @@ form select {
   margin: 5px;
 }
 
+#end {
+  order: 9;
+  text-align: center;
+}
+
 footer {
   display: flex;
   width: 100%;
   height: 100px;
   background-color: #423189;
-  line-height: 3;
+  line-height: 4;
   text-indent: 20px;
 }
 
@@ -190,16 +216,15 @@ footer #copyright {
   header #website-name {
     top: 50px;
     left: 300px;
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .menu a {
-    font-size: 25px;
+    font-size: 23px;
     margin-left: 20px;
   }
 
   nav {
-    width: 600px;
     text-align: center;
     justify-content: center;
     margin: 0 auto;
@@ -227,32 +252,44 @@ footer #copyright {
     margin: 0 auto;
   }
 
+  #hyperlinks-link {
+    order: 3;
+  }
+
+  .old-links-list {
+    order: 4;
+  }
+
+  #table-link {
+    order: 5;
+  }
+
   table {
-    border-radius: 10px;
-    margin: 0 auto;
-    height: 300px;
-    width: 700px;
+    order: 6;
   }
 
   tr,
   td,
   th {
+    width: 200px;
+    height: 40px;
     border: 2px solid darkslategray;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   form {
     width: 600px;
     font-size: 17px;
-    border: 2px solid black;
-    border-radius: 10px;
     padding: 20px;
   }
 
   footer {
     height: 100px;
     line-height: 2;
-    text-indent: 20px;
+  }
+
+  footer #copyright {
+    font-size: 26px;
   }
 }
