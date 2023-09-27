@@ -73,6 +73,11 @@ nav li {
   color: white;
 }
 
+.navigation-links {
+  text-align: center;
+  font-family: cursive;
+}
+
 a {
   color: white;
 }
@@ -201,11 +206,6 @@ footer #copyright {
   nav li {
     list-style-type: none;
     margin: 0 10px;
-  }
-
-  .navigation-links {
-    text-align: center;
-    font-family: cursive;
   }
 
   .content {
