@@ -15,31 +15,30 @@ header #logo {
   height: 285px;
   /* Размеры лого -->*/
   position: relative;
-  right: 10px;
+  right: 20px;
   /*float: left;*/
 }
 
 header .menu {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 0;
-  margin-top: 10px;
-  margin-right: 40px;
+  margin-top: 20px;
 }
 
 header #website-name {
   position: absolute;
-  top: 50px;
-  left: 300px;
+  top: 10px;
+  left: 100px;
   color: #ffffff;
   font-family: Georgia, "Times New Roman";
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 8px;
   font-family: cursive;
 }
 
@@ -69,7 +68,6 @@ nav a {
 .content {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   width: 100%;
   align-content: center;
   color: white;
@@ -84,7 +82,7 @@ table {
   border-radius: 10px;
   margin: 0 auto;
   height: 300px;
-  width: 700px;
+  width: 100%;
 }
 
 tr,
@@ -110,7 +108,7 @@ th {
 form {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 100%;
   text-align: center;
   justify-content: center;
   background-color: lightgray;
