@@ -11,8 +11,8 @@ header {
 }
 
 header #logo {
-  width: 135px;
-  height: 142px;
+  width: 110px;
+  height: 114px;
   /* Размеры лого -->*/
   position: relative;
   right: 10px;
@@ -44,27 +44,12 @@ header #website-name {
   margin-left: 5px;
 }
 
-#hyperlinks-link {
-  order: 5;
-}
-
-.old-links-list {
-  display: flex;
-  flex-direction: column;
-  order: 6;
-}
-
-#table-link {
-  order: 3;
-}
-
 img {
   width: 100%;
 }
 
 nav {
   display: flex;
-  order: 2;
   width: 90%;
   background-color: lightgray;
   border: none;
@@ -104,7 +89,6 @@ table {
   display: flex;
   justify-content: center;
   align-content: center;
-  order: 4;
   border-radius: 10px;
   margin: 0 auto;
 }
@@ -127,10 +111,6 @@ th {
 
 #table-title {
   background-color: rgb(30, 5, 44);
-}
-
-#form-link {
-  order: 7;
 }
 
 form {
@@ -177,7 +157,6 @@ form select {
 }
 
 #end {
-  order: 9;
   text-align: center;
 }
 
@@ -250,22 +229,6 @@ footer #copyright {
   .content {
     max-width: 960px;
     margin: 0 auto;
-  }
-
-  #hyperlinks-link {
-    order: 3;
-  }
-
-  .old-links-list {
-    order: 4;
-  }
-
-  #table-link {
-    order: 5;
-  }
-
-  table {
-    order: 6;
   }
 
   tr,
