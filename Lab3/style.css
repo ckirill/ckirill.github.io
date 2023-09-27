@@ -11,8 +11,8 @@ header {
 }
 
 header #logo {
-  width: 270px;
-  height: 285px;
+  width: 135px;
+  height: 142px;
   /* Размеры лого -->*/
   position: relative;
   right: 10px;
@@ -23,23 +23,25 @@ header .menu {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-right: 15px;
 }
 
 header #website-name {
   position: absolute;
-  top: 20px;
-  left: 50px;
+  top: 40px;
+  right: 90px;
   color: white;
   font-family: Georgia, "Times New Roman";
-  font-size: 12px;
+  font-size: 21px;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  font-size: 8px;
+  font-size: 14px;
   font-family: cursive;
+  margin-left: 5px;
 }
 
 img {
@@ -53,6 +55,7 @@ nav {
   border: none;
   border-radius: 10px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 nav ul {
@@ -60,7 +63,7 @@ nav ul {
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 nav a {
@@ -85,8 +88,7 @@ table {
   display: flex;
   border-radius: 10px;
   margin: 0 auto;
-  height: 300px;
-  width: 100%;
+  width: 95%;
 }
 
 tr,
@@ -94,7 +96,7 @@ td,
 th {
   border: 2px solid rgb(30, 5, 44);
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .even {
@@ -112,16 +114,16 @@ th {
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
   text-align: center;
   justify-content: center;
   background-color: lightgray;
-  font-size: 17px;
+  font-size: 10px;
   font-weight: bold;
   line-height: 1;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 20px;
+  padding: 5px;
   margin: 0 auto;
 }
 
@@ -131,7 +133,6 @@ form label {
 
 form input {
   width: 50%;
-  padding: 10px;
   margin: 5px;
 }
 
@@ -141,7 +142,7 @@ form input {
 }
 
 form #submit-button {
-  width: 100px;
+  width: 30%;
 }
 
 form .checkboxes {
@@ -150,8 +151,7 @@ form .checkboxes {
 }
 
 form select {
-  height: 80px;
-  width: 150px;
+  width: 40%;
   margin: 5px;
 }
 
@@ -160,13 +160,14 @@ footer {
   width: 100%;
   height: 100px;
   background-color: #423189;
-  line-height: 2;
+  line-height: 3;
   text-indent: 20px;
 }
 
 footer #copyright {
   color: white;
   font-family: cursive;
+  font-size: 17px;
 }
 
 @media screen and (min-width: 800px) {
@@ -175,20 +176,15 @@ footer #copyright {
   }
 
   header #logo {
-    width: 135px;
-    height: 142px;
+    width: 160px;
+    height: 166px;
     right: 30px;
   }
 
   header .menu {
-    position: absolute;
     top: 0;
     right: 0;
     margin-right: 20px;
-  }
-
-  header menu #list-menu {
-    margin-top: 0;
   }
 
   header #website-name {
@@ -203,12 +199,9 @@ footer #copyright {
   }
 
   nav {
-    display: flex;
     width: 600px;
     text-align: center;
-    background-color: lightgray;
-    border: none;
-    border-radius: 10px;
+    justify-content: center;
     margin: 0 auto;
   }
 
@@ -219,7 +212,7 @@ footer #copyright {
   }
 
   nav a {
-    font-size: 10px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
   }
