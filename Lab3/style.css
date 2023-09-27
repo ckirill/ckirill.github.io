@@ -50,7 +50,7 @@ img {
 nav {
   display: flex;
   width: 90%;
-  background-color: lightgray;
+  background-color: rgb(42, 11, 126);
   border: none;
   border-radius: 10px;
   margin: 0 auto;
@@ -199,7 +199,6 @@ footer #copyright {
   }
 
   nav li {
-    display: inline-block;
     list-style-type: none;
     margin: 0 10px;
   }
