@@ -1,1 +1,300 @@
+<!DOCTYPE html>
 
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="mainlogo.png" alt="logo" id="logo" />
+      <h1 id="website-name">Website</h1>
+
+      <div class="menu">
+        <ul id="list-menu">
+          <li><a href="#">Start page</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="content">
+      <h2 id="hyperlinks-link" class="navigation-links">Список гиперссылок</h2>
+      <ol>
+        <li>
+          <a href="http://kubsu.ru/"
+            >Абсолютная гиперссылка на главную страницу сайта kubsu</a
+          >
+        </li>
+        <li>
+          <a href="https://kubsu.ru/"
+            >Абсолютную на главную сайта kubsu в протоколе https</a
+          >
+        </li>
+        <li>
+          <a href="https://kubsu.ru/">
+            <img
+              src="image.jpg"
+              alt="Ссылка-изображение"
+              width="600"
+              height="400"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="/inner.html">Сокращенная ссылка на внутреннюю страницу</a>
+        </li>
+        <li>
+          <a
+            >Сокращенная ссылка на главную страницу находится на внутренней
+            странице</a
+          >
+        </li>
+        <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+        <li>
+          <a href="ckirill.github.io?par1=blue&par2=45&par3=student"
+            >Ссылка с тремя параметрами в URL</a
+          >
+        </li>
+        <li>
+          <a href="ckirill.github.io?id=11111111"
+            >Ссылка с параметром id в URL</a
+          >
+        </li>
+        <li>
+          <a href="./inner.html"
+            >Относительная на страницу в текущем каталоге</a
+          >
+        </li>
+        <li>
+          <a href="./about/ab.html"
+            >Относительную на страницу в каталоге about</a
+          >
+        </li>
+        <li>
+          <a
+            >Относительная ссылка на страницу в каталоге уровнем выше текущего
+            находится на странице в каталоге catalog2</a
+          >
+        </li>
+        <li>
+          <a
+            >Относительная ссылка на страницу в каталоге двумя уровнями выше
+            находится на странице в каталоге catalog2</a
+          >
+        </li>
+        <a href="catalog1/catalog2/pageCat2.html"
+          >Ссылка на страницу в каталоге catalog2</a
+        >
+        <li>
+          <p>
+            Контекстная <a href="https://kubsu.ru/">ссылка</a> в тексте абзаца
+          </p>
+        </li>
+        <li>
+          <a
+            href="https://www.castcom.ru/publications/web/korporativnyy-sayt-chto-eto-takoe-i-zachem-on-nuzhen.html#tag-6"
+            >Cсылка на фрагмент страницы стороннего сайта</a
+          >
+        </li>
+        <li>
+          <img
+            src="cube.jpg"
+            alt="cube"
+            style="width: 900px; height: 600px"
+            usemap="#mapped-img"
+          />
+          <map name="mapped-img">
+            <area
+              shape="rectangle"
+              coords="117,77,443,403"
+              href="rectangle.html"
+              alt="rectangle"
+            />
+            <area
+              shape="circle"
+              coords="683,239,180"
+              href="circle.html"
+              alt="circle"
+            />
+          </map>
+        </li>
+        <li><a href="">Cсылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li>
+          <a href="https://kubsu.ru" rel="nofollow"
+            >Ссылка, по которой запрещен переход поисковикам</a
+          >
+        </li>
+        <li>
+          <a href="https://kubsu.ru"
+            ><noindex
+              >Ссылка, запрещенная для индексации поисковикам</noindex
+            ></a
+          >
+        </li>
+        <li>
+          <ol>
+            <li>
+              <a href="https://kubsu.ru" title="Всплывающий текст 1"
+                >Нумерованная ссылка 1</a
+              >
+            </li>
+            <li>
+              <a href="https://kubsu.ru" title="Всплывающий текст 2"
+                >Нумерованная ссылка 2</a
+              >
+            </li>
+            <li>
+              <a href="https://kubsu.ru" title="Всплывающий текст 3"
+                >Нумерованная ссылка 3</a
+              >
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="ftp://user:pass@tavalik.ru/Temp/file.txt"
+            >Ссылку на файл на сервере FTP с авторизацией</a
+          >
+        </li>
+      </ol>
+
+      <h2 id="table-link" class="navigation-links">Таблица</h2>
+      <table>
+        <tr id="table-title">
+          <th>Заголовок 1</th>
+          <th>Заголовок 2</th>
+          <th>Заголовок 3</th>
+          <th>Заголовок 4</th>
+        </tr>
+        <tr class="odd">
+          <td colspan="2">Объединенная ячейка 1</td>
+          <td>Ячейка 1</td>
+          <td>Ячейка 2</td>
+        </tr>
+        <tr class="even">
+          <td>Ячейка 3</td>
+          <td>Ячейка 4</td>
+          <td>Ячейка 5</td>
+          <td>Ячейка 6</td>
+        </tr>
+        <tr class="odd">
+          <td>Ячейка 7</td>
+          <td colspan="3">Объединенная ячейка 2</td>
+        </tr>
+        <tr class="even">
+          <td rowspan="2">Объединенная ячейка 3</td>
+          <td>Ячейка 8</td>
+          <td>Ячейка 9</td>
+          <td>Ячейка 10</td>
+        </tr>
+        <tr class="odd">
+          <td>Ячейка 11</td>
+          <td>Ячейка 12</td>
+          <td>Ячейка 13</td>
+        </tr>
+        <tr class="even">
+          <td>Ячейка 14</td>
+          <td colspan="2">Объединенная ячейка 4</td>
+          <td>Ячейка 15</td>
+        </tr>
+      </table>
+
+      <h2 id="form-link" class="navigation-links">Форма</h2>
+
+      <form action="/" method="post">
+        <label>
+          ФИО: <br />
+          <input type="text" name="name" placeholder="Введите ваше ФИО" />
+        </label>
+        <br />
+
+        <label>
+          Телефон: <br />
+          <input
+            type="tel"
+            name="field-tel"
+            placeholder="Введите ваш телефон"
+          />
+        </label>
+        <br />
+
+        <label>
+          E-mail: <br />
+          <input
+            type="email"
+            name="field-email"
+            placeholder="Введите ваш e-mail"
+          />
+        </label>
+        <br />
+
+        <label>
+          Дата рождения: <br />
+          <input type="date" name="field-date-of-birth" value="2023-09-05" />
+        </label>
+        <br />
+
+        <label>
+          Пол: <br />
+          <input
+            class="checkboxes"
+            type="radio"
+            name="radio-group-1"
+            checked="checked"
+          />
+          Мужской <br />
+        </label>
+        <label>
+          <input class="checkboxes" type="radio" name="radio-group-1" />
+          Женский
+        </label>
+        <br />
+
+        <label>
+          Любимый язык программирования: <br />
+          <select name="field-favorite-language" multiple="multiple">
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Scala">Scala</option>
+          </select>
+        </label>
+        <br />
+
+        <label>
+          Биография: <br />
+          <textarea name="bio" placeholder="Напишите о себе..."></textarea>
+        </label>
+        <br />
+
+        <label>
+          <input class="checkboxes" type="checkbox" name="check-1" />
+          С контрактом ознакомлен(а)
+        </label>
+        <br />
+
+        <label>
+          <input type="submit" value="Сохранить" />
+        </label>
+      </form>
+
+      <h1 id="fragment">Ссылка на фрагмент текущей страницы ведёт сюда</h1>
+    </div>
+
+    <footer>
+      <h2 id="copyright">(c) Демченко Кирилл</h2>
+    </footer>
+  </body>
+</html>

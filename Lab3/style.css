@@ -1,0 +1,260 @@
+body {
+  background-color: #4d0b83;
+}
+
+header {
+  width: 100%;
+  height: 400px;
+  background: url("header2.jpg");
+  background-size: cover;
+}
+
+header #logo {
+  width: 270px;
+  height: 285px;
+  position: relative;
+  right: 30px;
+  left: 30px;
+  float: left;
+}
+
+header .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -7px;
+  margin-right: 20px;
+}
+
+header menu #list-menu {
+  margin-top: 0;
+}
+
+#list-menu li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+header #website-name {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman";
+  font-size: 60px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: cursive;
+  margin-left: 20px;
+}
+
+nav {
+  width: 90%;
+  text-align: center;
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+nav ul {
+  padding: 10px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+  align-content: center;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+table {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  order: 4;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+tr,
+td,
+th {
+  border: 2px solid rgb(30, 5, 44);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.even {
+  background-color: rgb(30, 5, 44);
+}
+
+.odd {
+  background-color: rgb(23, 0, 226);
+}
+
+#table-title {
+  background-color: rgb(30, 5, 44);
+}
+
+form {
+  width: 600px;
+  text-align: center;
+  justify-content: center;
+  background-color: lightgray;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+}
+
+form input {
+  width: 50%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.navigation-links {
+  text-align: center;
+  font-family: cursive;
+}
+
+form #submit-button {
+  width: 100px;
+}
+
+form .checkboxes {
+  width: auto;
+  margin: 10px;
+}
+
+form select {
+  height: 80px;
+  width: 150px;
+  margin: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #423189;
+  line-height: 4;
+  text-indent: 20px;
+}
+
+footer #copyright {
+  color: white;
+  font-family: cursive;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 200px;
+  }
+
+  header #logo {
+    width: 330px;
+    height: 200px;
+    top: 10px;
+    right: 30px;
+  }
+
+  header .menu {
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+  }
+  header #website-name {
+    top: 50px;
+    left: 300px;
+    font-size: 55px;
+  }
+
+  .menu a {
+    font-size: 23px;
+    margin-left: 20px;
+  }
+
+  nav {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+  }
+  nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  #hyperlinks-link {
+    order: 3;
+  }
+  .old-links-list {
+    order: 4;
+  }
+  #table-link {
+    order: 5;
+  }
+  table {
+    order: 6;
+  }
+  tr,
+  td,
+  th {
+    width: 200px;
+    height: 40px;
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    font-size: 22px;
+  }
+  form {
+    width: 600px;
+    font-size: 17px;
+    padding: 20px;
+  }
+  footer {
+    height: 100px;
+    line-height: 2;
+  }
+  footer #copyright {
+    font-size: 26px;
+  }
+}
