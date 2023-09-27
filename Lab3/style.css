@@ -11,8 +11,8 @@ header {
 }
 
 header #logo {
-  width: 30px;
-  height: 33px;
+  width: 210px;
+  height: 215px;
   /* Размеры лого -->*/
   position: relative;
   right: 10px;
@@ -173,8 +173,8 @@ footer #copyright {
   }
 
   header #logo {
-    width: 330px;
-    height: 210px;
+    width: 210px;
+    height: 215px;
     right: 30px;
   }
 
