@@ -12,14 +12,30 @@
     />
     <style>
       .calc {
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        background-color: #1e5945;
+        border-radius: 25px;
+        padding: 10px;
+        padding-bottom: 20px;
+      }
+
+      .table {
+        margin-top: 10px;
+      }
+
+      body {
+        background-image: url(Stadium.jpg);
       }
     </style>
   </head>
   <body>
-    <div class="container calc">
+    <div class="container calc col-md-4">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div id="calc">
             <div class="form-group">
               <label for="page-size"><b>Билеты Стадион ФК Краснодар</b></label>
@@ -76,7 +92,6 @@
       </div>
     </div>
 
-    <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
