@@ -1,1 +1,164 @@
-<h1></h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .calc {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container calc">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="calc">
+            <div class="form-group">
+              <label for="page-size">Билеты Стадион ФК Краснодар</label>
+              <select id="ticket" class="form-control"></select>
+            </div>
+            <div class="form-group">
+              <label for="countTicket">Кол-во билетов</label>
+              <input
+                class="form-control"
+                type="number"
+                size="3"
+                min="1"
+                value="1"
+                id="countT"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th>Цена</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Матч</td>
+            <td class="ticket">-</td>
+          </tr>
+          <tr>
+            <td>Количество билетов</td>
+            <td class="countTicket">-</td>
+          </tr>
+          <tr>
+            <td>Цена за билет</td>
+            <td class="price">-</td>
+          </tr>
+          <tr>
+            <td>Итого</td>
+            <td class="sum">-</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="calculateButton">Подсчитать стоимость</button>
+    </div>
+
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        var selectMatch,
+          countTicket = 0,
+          priceTicket = 0,
+          sum = 0,
+          Tickets = {
+            "Краснодар - Ростов": { 2500: "Standart", 3500: "VIP" },
+            "Краснодар - Локомотив Москва": { 2500: "Standart", 3500: "VIP" },
+            "Краснодар - Сочи": { 2500: "Standart", 3500: "VIP" },
+          };
+
+        function TicketPrice() {
+          var size,
+            price,
+            html = "";
+          for (size in Tickets) {
+            for (price in Tickets[size]) {
+              html +=
+                '<option data-match="' +
+                size +
+                '"data-price ="' +
+                price +
+                '">' +
+                size +
+                " - " +
+                Tickets[size][price] +
+                " " +
+                price +
+                "руб.</option>";
+            }
+          }
+          $("#ticket").append(html);
+        }
+
+        function changeCountTicket() {
+          countTicket = $("#countT").val();
+          if (countTicket < 1) {
+            countTicket = 1;
+            $("#countT").val("1");
+          }
+          recalc();
+        }
+
+        function changeTicket() {
+          selectMatch = $("#calc option").filter(":selected").data("match");
+          selectPrice = $("#calc option").filter(":selected").data("price");
+          recalc();
+        }
+
+        function recalc() {
+          sum = selectPrice * countTicket;
+          changeTable();
+        }
+
+        function changeTable() {
+          $(".ticket").text(selectMatch);
+          $(".countTicket").text(countTicket);
+          $(".price").text(selectPrice + " руб.");
+          $(".sum").text(sum + " руб.");
+        }
+
+        TicketPrice();
+
+        $("#calculateButton").change(function () {
+          recalc();
+        });
+
+        $("#ticket").change(function () {
+          changeTicket();
+        });
+
+        $("#countT").change(function () {
+          changeCountTicket();
+        });
+      });
+    </script>
+  </body>
+</html>
