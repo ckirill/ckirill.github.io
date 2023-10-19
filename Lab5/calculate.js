@@ -26,7 +26,7 @@ function updatePrice() {
 
   // Скрываем или показываем чекбоксы.
   let checkDiv = document.getElementById("checkboxes");
-  checkDiv.style.display = select.value == "3" ? "none" : "block";
+  checkDiv.style.display = select.value == "2" ? "block" : "none";
 
   // Смотрим какие товарные свойства выбраны.
   let checkboxes = document.querySelectorAll("#checkboxes input");
@@ -40,7 +40,7 @@ function updatePrice() {
   });
 
   let prodPrice = document.getElementById("prodPrice");
-  prodPrice.innerHTML = price + " рублей";
+  prodPrice.innerHTML = price * $("#countTT").val() + " рублей";
 }
 
 function getPrices() {
@@ -89,6 +89,10 @@ window.addEventListener("DOMContentLoaded", function (event) {
       let c = event.target;
       console.log(c.name);
       console.log(c.value);
+      updatePrice();
+    });
+
+    $("#countTT").change(function () {
       updatePrice();
     });
   });
