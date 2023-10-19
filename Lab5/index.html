@@ -10,6 +10,8 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
+    <script src="calculate.js"></script>
     <style>
       .calc {
         display: flex;
@@ -88,6 +90,36 @@
               </div>
             </div>
           </div>
+
+          <div id="prodPrice">Выберите тип услуги</div>
+          Тип трансфера до стадиона:
+          <form>
+            <select name="prodType">
+              <option value="1">Автобус</option>
+              <option value="2">Самолет</option>
+              <option value="3">Такси</option>
+            </select>
+            <div id="radios">
+              <label
+                ><input type="radio" name="prodOptions" value="option1" />
+                Эконом</label
+              >
+              <label
+                ><input type="radio" name="prodOptions" value="option2" />
+                Комфорт</label
+              >
+              <label
+                ><input type="radio" name="prodOptions" value="option3" />
+                Бизнес</label
+              >
+            </div>
+            <div id="checkboxes">
+              <label><input type="checkbox" name="prop1" /> Включить еду</label>
+              <label
+                ><input type="checkbox" name="prop2" /> Одинарное место</label
+              >
+            </div>
+          </form>
         </div>
       </div>
     </div>
